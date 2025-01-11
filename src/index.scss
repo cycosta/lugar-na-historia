@@ -11,3 +11,10 @@ html {
     box-sizing: inherit;
   }
 }
+
+/* Druk Bold */
+@font-face {
+  font-family: 'Druk';
+  src: url('assets/fonts/DrukBold.otf') format('opentype');
+  font-style: bold;
+}
