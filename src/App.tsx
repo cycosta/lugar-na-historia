@@ -1,7 +1,9 @@
 import './index.scss';
 
+import { Home } from './views';
+
 function App() {
-  return <h1>Lugar na História</h1>;
+  return <Home />;
 }
 
 export default App;
