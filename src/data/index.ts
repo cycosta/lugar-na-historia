@@ -1,1 +1,2 @@
-export { postTypes } from './postTypes';
+export { postStyles } from './postStyles';
+export { postFormats } from './postFormats';

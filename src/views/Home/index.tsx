@@ -1,9 +1,12 @@
-import { Container, Dropdown } from '../../components';
+import { Container } from '../../components';
 
-import { postTypes } from '../../data/postTypes';
+import { StyledConfigWrapper, StyledPreviewWrapper } from './Home.styles';
 
-export const Home = () => (
-  <Container>
-    <Dropdown options={postTypes} />
-  </Container>
-);
+export const Home = () => {
+  return (
+    <Container>
+      <StyledConfigWrapper></StyledConfigWrapper>
+      <StyledPreviewWrapper></StyledPreviewWrapper>
+    </Container>
+  );
+};
