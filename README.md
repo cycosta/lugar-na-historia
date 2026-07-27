@@ -1,7 +1,7 @@
 # Lugar na História — Post Generator
 
-Internal tool for generating Instagram post/story artwork for the *Lugar na
-História* project. Fill in a form, preview the rendered card, and export it
+Internal tool for generating Instagram post/story artwork for the _Lugar na
+História_ project. Fill in a form, preview the rendered card, and export it
 as an image (or a zip of images) — no design software required.
 
 ## Features
@@ -27,14 +27,14 @@ npm run dev
 
 ## Scripts
 
-| Command          | Description                          |
-| ---------------- | ------------------------------------- |
-| `npm run dev`     | Start the Vite dev server             |
-| `npm run build`   | Type-check and build for production   |
-| `npm run preview` | Preview the production build locally  |
-| `npm run test`    | Run the Jest test suite               |
-| `npm run lint`    | Lint the codebase with ESLint         |
-| `npm run format`  | Check formatting with Prettier        |
+| Command           | Description                          |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Start the Vite dev server            |
+| `npm run build`   | Type-check and build for production  |
+| `npm run preview` | Preview the production build locally |
+| `npm run test`    | Run the Jest test suite              |
+| `npm run lint`    | Lint the codebase with ESLint        |
+| `npm run format`  | Check formatting with Prettier       |
 
 ## Project structure
 

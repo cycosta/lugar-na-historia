@@ -12,7 +12,13 @@ describe('validate', () => {
 
   it('should pass once the required Pré Passeio fields are filled', () => {
     const data = initialState();
-    data.pre = { ...data.pre, title: 'Memorial', day: '20', month: 'Agosto', photo: 'data:image/png;base64,abc' };
+    data.pre = {
+      ...data.pre,
+      title: 'Memorial',
+      day: '20',
+      month: 'Agosto',
+      photo: 'data:image/png;base64,abc',
+    };
 
     expect(validate('pre', data).valid).toBe(true);
   });

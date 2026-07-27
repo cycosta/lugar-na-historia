@@ -6,7 +6,13 @@ describe('buildCards', () => {
     const data = initialState();
     const cards = buildCards('pre', data);
 
-    expect(cards.map((c) => c.label)).toEqual(['Capa', 'Descrição', 'Itinerário', 'Preços', 'Encerramento']);
+    expect(cards.map((c) => c.label)).toEqual([
+      'Capa',
+      'Descrição',
+      'Itinerário',
+      'Preços',
+      'Encerramento',
+    ]);
     expect(cards.every((c) => c.w === 1080 && c.h === 1350)).toBe(true);
   });
 
@@ -18,7 +24,12 @@ describe('buildCards', () => {
     ];
     const cards = buildCards('pos', data);
 
-    expect(cards.map((c) => c.label)).toEqual(['Capa', 'Galeria 1', 'Galeria 2', 'Encerramento']);
+    expect(cards.map((c) => c.label)).toEqual([
+      'Capa',
+      'Galeria 1',
+      'Galeria 2',
+      'Encerramento',
+    ]);
   });
 
   it('should render Reels at 1080x1920 (Instagram Stories/Reels aspect)', () => {
