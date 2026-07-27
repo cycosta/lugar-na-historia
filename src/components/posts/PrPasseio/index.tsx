@@ -103,7 +103,7 @@ export const PrPasseio: React.FC<PrPasseioProps> = (_p = {}) => {
                 flexShrink: 0,
               },
             },
-            props.text1 ?? 'PASSEIO • 20 DE AGOSTO',
+            props.text1 ?? 'PASSEIO • 27 DE ABRIL',
           ),
         ),
         /*#__PURE__*/ React.createElement(
@@ -151,7 +151,7 @@ export const PrPasseio: React.FC<PrPasseioProps> = (_p = {}) => {
                   flexShrink: 0,
                 },
               },
-              props.text2 ?? 'Memorial vítimas',
+              props.text2 ?? 'São João Marcos',
             ),
           ),
           /*#__PURE__*/ React.createElement(
@@ -186,7 +186,7 @@ export const PrPasseio: React.FC<PrPasseioProps> = (_p = {}) => {
                   flexShrink: 0,
                 },
               },
-              props.text3 ?? 'do holocausto',
+              props.text3 ?? '',
             ),
           ),
         ),
@@ -236,14 +236,14 @@ export const PrPasseio: React.FC<PrPasseioProps> = (_p = {}) => {
                 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
               fontWeight: 500,
               fontSize: 70,
-              lineHeight: '100%',
+              lineHeight: 1.2,
               textBox: 'trim-both cap alphabetic',
               color: 'rgb(245,245,245)',
               flexShrink: 0,
             },
           },
           props.text1 ??
-            'Conheça o Memorial às Vítimas do Holocausto. Histórias de vítimas dos horrores da Segunda Guerra Mundial',
+            'Roteiro histórico em uma rica cidade do ciclo do café no estado do Rio de Janeiro que acabou sendo totalmente demolida e despovoada na década de 1940, e onde hoje funciona um Parque Arqueológico e Ambiental aberto para turismo cultural.',
         ),
       ),
       /*#__PURE__*/ React.createElement(
@@ -382,7 +382,7 @@ export const PrPasseio: React.FC<PrPasseioProps> = (_p = {}) => {
                     whiteSpace: 'nowrap',
                   },
                 },
-                props.text1 ?? 'First stop',
+                props.text1 ?? 'Ruínas do Antigo Povoado do Saco',
               ),
             ),
             /*#__PURE__*/ React.createElement(
@@ -478,7 +478,7 @@ export const PrPasseio: React.FC<PrPasseioProps> = (_p = {}) => {
                     whiteSpace: 'nowrap',
                   },
                 },
-                props.text2 ?? 'Middle 1',
+                props.text2 ?? 'Mirante Imperial',
               ),
             ),
             /*#__PURE__*/ React.createElement(
@@ -575,7 +575,7 @@ export const PrPasseio: React.FC<PrPasseioProps> = (_p = {}) => {
                       whiteSpace: 'nowrap',
                     },
                   },
-                  props.text3 ?? 'Middle 2',
+                  props.text3 ?? 'Cachoeira dos Escravizados',
                 ),
               ),
               /*#__PURE__*/ React.createElement(
@@ -672,7 +672,8 @@ export const PrPasseio: React.FC<PrPasseioProps> = (_p = {}) => {
                       whiteSpace: 'nowrap',
                     },
                   },
-                  props.text4 ?? 'Middle 3',
+                  props.text4 ??
+                    'Parque Arqueológico e Ambiental de São João Marcos',
                 ),
               ),
               /*#__PURE__*/ React.createElement(
@@ -1025,7 +1026,7 @@ export const PrPasseio: React.FC<PrPasseioProps> = (_p = {}) => {
                   flexShrink: 0,
                 },
               },
-              props.text1 ?? '20 de agosto',
+              props.text1 ?? '27 de abril',
             ),
           ),
           /*#__PURE__*/ React.createElement(
@@ -1058,7 +1059,7 @@ export const PrPasseio: React.FC<PrPasseioProps> = (_p = {}) => {
                   flexShrink: 0,
                 },
               },
-              props.text2 ?? 'R$ 55,00',
+              props.text2 ?? 'R$ 150,00',
             ),
           ),
         ),

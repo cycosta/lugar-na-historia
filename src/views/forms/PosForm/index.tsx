@@ -61,7 +61,7 @@ export const PosForm = ({ d, set }: PosFormProps) => {
           <TextInput
             value={d.title}
             onChange={(v) => set({ title: v })}
-            placeholder="Memorial Vítimas do Holocausto"
+            placeholder="São João Marcos"
           />
         </Field>
         <Field label="Formato da capa">

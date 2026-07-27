@@ -9,7 +9,7 @@ import {
   Icon,
 } from '../../../components';
 import { IconType } from '../../../components/Icon/Icon.types';
-import { MONTHS, AgendaItemData } from '../../../data';
+import { MONTHS, AGENDA_EXAMPLES, AgendaItemData } from '../../../data';
 
 import { StyledSection, StyledSectionTitle } from '../formStyles';
 import {
@@ -80,6 +80,7 @@ export const AgendaForm = ({ d, set }: AgendaFormProps) => {
                 <DayInput
                   value={it.date}
                   onChange={(v) => setItem(i, { date: v })}
+                  placeholder={AGENDA_EXAMPLES[i]?.date}
                 />
               </Field>
             </StyledDayField>
@@ -88,7 +89,7 @@ export const AgendaForm = ({ d, set }: AgendaFormProps) => {
                 <TextInput
                   value={it.title}
                   onChange={(v) => setItem(i, { title: v })}
-                  placeholder="Pequena África"
+                  placeholder={AGENDA_EXAMPLES[i]?.title || 'Pequena África'}
                 />
               </Field>
             </StyledTitleField>

@@ -36,12 +36,25 @@ export const LABELS = {
 };
 
 export const DEFAULT_DESC =
-  'Histórias de vítimas dos horrores da Segunda Guerra Mundial.';
+  'São João Marcos foi a única cidade no Brasil a ser tombada pelo Iphan e depois destombada e demolida a marretas nos anos 1940 para fornecimento de energia e água à capital.';
+
+export const ITINERARY_EXAMPLES = [
+  'Ruínas do Antigo Povoado do Saco',
+  'Mirante Imperial',
+  'Cachoeira dos Escravizados',
+  'Parque Arqueológico e Ambiental de São João Marcos',
+];
+
+export const AGENDA_EXAMPLES = [
+  { date: '08', title: 'São João Marcos' },
+  { date: '15', title: 'Memorial Vítimas do Holocausto' },
+  { date: '22', title: 'Ruínas Históricas de Nova Iguaçu' },
+];
 
 export const initialState = (): PostGeneratorData => ({
   pre: {
     day: '',
-    month: 'Agosto',
+    month: 'Abril',
     title: '',
     description: '',
     stops: ['', '', ''],
@@ -50,7 +63,7 @@ export const initialState = (): PostGeneratorData => ({
   },
   pos: {
     day: '',
-    month: 'Agosto',
+    month: 'Abril',
     title: '',
     coverPhoto: null,
     coverShape: 'circular',
@@ -58,7 +71,7 @@ export const initialState = (): PostGeneratorData => ({
   },
   agenda: {
     variant: 'spike',
-    month: 'Dezembro',
+    month: 'Abril',
     items: [
       { date: '', title: '' },
       { date: '', title: '' },

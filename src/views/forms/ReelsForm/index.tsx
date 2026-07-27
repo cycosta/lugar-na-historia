@@ -10,7 +10,7 @@ export const ReelsForm = ({ d, set }: ReelsFormProps) => (
       <TextInput
         value={d.title}
         onChange={(v) => set({ title: v })}
-        placeholder="Conrado Miguel Pereira"
+        placeholder="São João Marcos"
       />
     </Field>
     <Field label="Foto">
@@ -31,7 +31,7 @@ export const ReelsForm = ({ d, set }: ReelsFormProps) => (
         <TextInput
           value={d.subtitle}
           onChange={(v) => set({ subtitle: v })}
-          placeholder="Nos trilhos da história"
+          placeholder="Roteiro histórico"
         />
       </Field>
     )}

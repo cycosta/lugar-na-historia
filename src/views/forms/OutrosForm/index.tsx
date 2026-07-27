@@ -36,7 +36,7 @@ export const OutrosForm = ({ d, set }: OutrosFormProps) => {
             <TextInput
               value={d.title}
               onChange={(v) => set({ title: v })}
-              placeholder="Central do Brasil"
+              placeholder="Você sabia?"
             />
           </Field>
           <Toggle label="Imagem" checked={d.showImage} onChange={toggleImage} />
@@ -55,7 +55,7 @@ export const OutrosForm = ({ d, set }: OutrosFormProps) => {
               <TextArea
                 value={d.description}
                 onChange={(v) => set({ description: v })}
-                placeholder="Histórias de vítimas dos horrores da Segunda Guerra Mundial."
+                placeholder="São João Marcos foi a única cidade no Brasil a ser tombada pelo Iphan e depois destombada e demolida a marretas nos anos 1940 para fornecimento de energia e água à capital."
               />
             </Field>
           )}
@@ -65,7 +65,7 @@ export const OutrosForm = ({ d, set }: OutrosFormProps) => {
           <TextArea
             value={d.description}
             onChange={(v) => set({ description: v })}
-            placeholder="Histórias de vítimas dos horrores da Segunda Guerra Mundial."
+            placeholder="São João Marcos foi a única cidade no Brasil a ser tombada pelo Iphan e depois destombada e demolida a marretas nos anos 1940 para fornecimento de energia e água à capital."
           />
         </Field>
       )}

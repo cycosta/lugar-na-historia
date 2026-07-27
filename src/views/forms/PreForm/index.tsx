@@ -11,7 +11,7 @@ import {
   Icon,
 } from '../../../components';
 import { IconType } from '../../../components/Icon/Icon.types';
-import { MONTHS } from '../../../data';
+import { MONTHS, ITINERARY_EXAMPLES } from '../../../data';
 
 import {
   StyledSection,
@@ -54,7 +54,7 @@ export const PreForm = ({ d, set }: PreFormProps) => {
           <TextInput
             value={d.title}
             onChange={(v) => set({ title: v })}
-            placeholder="Memorial Vítimas do Holocausto"
+            placeholder="São João Marcos"
           />
         </Field>
         <Field label="Imagem de capa">
@@ -68,7 +68,7 @@ export const PreForm = ({ d, set }: PreFormProps) => {
           <TextArea
             value={d.description}
             onChange={(v) => set({ description: v })}
-            placeholder="Histórias de vítimas dos horrores da Segunda Guerra Mundial."
+            placeholder="Roteiro histórico em uma rica cidade do ciclo do café no estado do Rio de Janeiro que acabou sendo totalmente demolida e despovoada na década de 1940, e onde hoje funciona um Parque Arqueológico e Ambiental aberto para turismo cultural."
           />
         </Field>
       </StyledSection>
@@ -81,7 +81,7 @@ export const PreForm = ({ d, set }: PreFormProps) => {
               <TextInput
                 value={s}
                 onChange={(v) => setStop(i, v)}
-                placeholder={`Parada ${i + 1}`}
+                placeholder={ITINERARY_EXAMPLES[i] || `Parada ${i + 1}`}
               />
             </div>
             <IconButton

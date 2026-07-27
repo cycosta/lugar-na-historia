@@ -8,7 +8,7 @@ import {
   PreData,
   ReelsData,
 } from './types';
-import { LABELS, DEFAULT_DESC } from './postTypes';
+import { LABELS, DEFAULT_DESC, ITINERARY_EXAMPLES } from './postTypes';
 
 const buildPreCards = (d: PreData): Card[] => {
   const eyebrow =
@@ -48,9 +48,9 @@ const buildPreCards = (d: PreData): Card[] => {
       fixItinerary: true,
       props: {
         type: 'itinerary',
-        text1: stops[0] || 'Parada 1',
-        text2: stops[1] || 'Parada 2',
-        text3: stops[2] || 'Parada 3',
+        text1: stops[0] || ITINERARY_EXAMPLES[0],
+        text2: stops[1] || ITINERARY_EXAMPLES[1],
+        text3: stops[2] || ITINERARY_EXAMPLES[2],
         text4: stops[3],
         itinerary1: true,
         itinerary2: stops.length > 3,
@@ -188,7 +188,7 @@ const buildReelsCards = (d: ReelsData): Card[] => [
     overlay: d.showSubtitle
       ? {
           kind: 'subtitle',
-          text: (d.subtitle || 'Nos trilhos da história').toUpperCase(),
+          text: (d.subtitle || 'Roteiro histórico').toUpperCase(),
         }
       : null,
   },

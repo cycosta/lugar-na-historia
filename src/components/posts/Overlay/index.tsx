@@ -16,7 +16,7 @@ export const Overlay = ({ overlay, w }: OverlayProps) => {
           fontFamily: fontFamily.body,
           fontWeight: 500,
           fontSize: 44,
-          lineHeight: 1.15,
+          lineHeight: 1.2,
           color: '#fff',
           pointerEvents: 'none',
         }}

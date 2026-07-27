@@ -11,6 +11,6 @@ export const MoneyInput = ({ value, onChange }: MoneyInputProps) => (
     onChange={(e: ChangeEvent<HTMLInputElement>) =>
       onChange(formatBRL(e.target.value))
     }
-    placeholder="R$ 0,00"
+    placeholder="R$ 150,00"
   />
 );

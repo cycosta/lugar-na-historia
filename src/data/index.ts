@@ -3,6 +3,8 @@ export {
   POST_TYPES,
   LABELS,
   DEFAULT_DESC,
+  ITINERARY_EXAMPLES,
+  AGENDA_EXAMPLES,
   initialState,
 } from './postTypes';
 export { buildCards } from './buildCards';

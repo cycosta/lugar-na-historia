@@ -1,4 +1,6 @@
-import stairsWalk from '../../../assets/photos/stairs-walk.jpg';
+import saoJoaoMarcosRuins from '../../../assets/photos/sao-joao-marcos-ruins.jpg';
+
+import { AGENDA_EXAMPLES } from '../../../data/postTypes';
 
 import { AgendaCardProps, AgendaItem, AgendaVariant } from './AgendaCard.types';
 
@@ -66,7 +68,7 @@ const AgendaItems = ({ items }: { items: AgendaItem[] }) => (
             color: 'rgb(245,245,245)',
           }}
         >
-          {it.date || '01'}
+          {it.date || AGENDA_EXAMPLES[i]?.date || '01'}
         </span>
         <span
           style={{
@@ -80,7 +82,7 @@ const AgendaItems = ({ items }: { items: AgendaItem[] }) => (
             wordBreak: 'break-word',
           }}
         >
-          {it.title || 'Passeio'}
+          {it.title || AGENDA_EXAMPLES[i]?.title || 'Passeio'}
         </span>
       </div>
     ))}
@@ -89,11 +91,11 @@ const AgendaItems = ({ items }: { items: AgendaItem[] }) => (
 
 export function AgendaCard({
   variant = 'spike',
-  month = 'Dezembro',
+  month = 'Abril',
   items = [],
   photo,
 }: AgendaCardProps) {
-  const bg = photo || stairsWalk;
+  const bg = photo || saoJoaoMarcosRuins;
   if (variant === 'none') {
     return (
       <div

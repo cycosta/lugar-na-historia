@@ -1,6 +1,6 @@
 import { DependencyList, RefObject, useLayoutEffect } from 'react';
 
-import stairsWalk from '../assets/photos/stairs-walk.jpg';
+import saoJoaoMarcosRuins from '../assets/photos/sao-joao-marcos-ruins.jpg';
 
 export const useInjectPhoto = (
   ref: RefObject<HTMLDivElement>,
@@ -12,7 +12,7 @@ export const useInjectPhoto = (
   useLayoutEffect(() => {
     const root = ref.current;
     if (!root || !needsPhoto) return;
-    const url = photo || stairsWalk;
+    const url = photo || saoJoaoMarcosRuins;
 
     root.querySelectorAll<HTMLDivElement>('div').forEach((el) => {
       const cls = el.className ? String(el.className) : '';

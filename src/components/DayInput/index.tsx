@@ -4,7 +4,11 @@ import { StyledInput } from '../TextInput/TextInput.styles';
 
 import { DayInputProps } from './DayInput.types';
 
-export const DayInput = ({ value, onChange }: DayInputProps) => (
+export const DayInput = ({
+  value,
+  onChange,
+  placeholder = '27',
+}: DayInputProps) => (
   <StyledInput
     type="number"
     min="1"
@@ -15,6 +19,6 @@ export const DayInput = ({ value, onChange }: DayInputProps) => (
       if (v !== '') v = String(Math.max(1, Math.min(31, parseInt(v, 10) || 1)));
       onChange(v);
     }}
-    placeholder="20"
+    placeholder={placeholder}
   />
 );
