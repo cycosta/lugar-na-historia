@@ -20,9 +20,9 @@ export const useClampTitle = (
         WebkitBoxOrient: 'vertical',
         overflow: 'hidden',
         lineHeight: '0.9',
-        paddingTop: '10px',
+        paddingTop: '40px',
         paddingBottom: '14px',
-        marginTop: '-10px',
+        marginTop: '-40px',
         marginBottom: '-14px',
       });
     }
