@@ -10,12 +10,9 @@ export const useItineraryFix = (
     if (!root || !active) return;
 
     try {
-      const dots = [...root.querySelectorAll<HTMLDivElement>('div')].filter(
-        (el) =>
-          el.style.width === '10px' &&
-          el.style.height === '10px' &&
-          el.style.borderRadius === '50%',
-      );
+      const dots = [
+        ...root.querySelectorAll<HTMLDivElement>('[data-pg-itinerary-dot]'),
+      ];
       if (!dots.length) return;
 
       const stopGroups = dots
@@ -43,8 +40,8 @@ export const useItineraryFix = (
         container.insertBefore(line, stopGroups[i + 1]);
       }
 
-      [...root.querySelectorAll<HTMLSpanElement>('span')]
-        .filter((el) => parseInt(el.style.fontSize) === 40)
+      root
+        .querySelectorAll<HTMLSpanElement>('[data-pg-itinerary-text]')
         .forEach((el) => {
           el.style.fontWeight = '400';
         });

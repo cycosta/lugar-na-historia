@@ -9,6 +9,7 @@ import { AgendaCard } from '../AgendaCard';
 import { Overlay } from '../Overlay';
 
 import { CardBoxProps } from './CardBox.types';
+import { StyledClip, StyledScaled } from './CardBox.styles';
 
 const COMPONENTS = { PrPasseio, PSPasseio, SemPasseio, Reels, AgendaCard };
 
@@ -40,27 +41,11 @@ export const CardBox = ({ card, scale }: CardBoxProps) => {
   if (!Comp) return null;
 
   return (
-    <div
-      style={{
-        width: card.w * scale,
-        height: card.h * scale,
-        overflow: 'hidden',
-        position: 'relative',
-      }}
-    >
-      <div
-        ref={ref}
-        style={{
-          width: card.w,
-          height: card.h,
-          position: 'relative',
-          transform: `scale(${scale})`,
-          transformOrigin: 'top left',
-        }}
-      >
+    <StyledClip $w={card.w * scale} $h={card.h * scale}>
+      <StyledScaled ref={ref} $w={card.w} $h={card.h} $scale={scale}>
         <Comp {...card.props} />
         <Overlay overlay={card.overlay} w={card.w} h={card.h} />
-      </div>
-    </div>
+      </StyledScaled>
+    </StyledClip>
   );
 };

@@ -9,9 +9,9 @@ export const useClampTitle = (
     const root = ref.current;
     if (!root || !clampTitle) return;
 
-    const spans = [...root.querySelectorAll<HTMLSpanElement>('span')].filter(
-      (el) => parseInt(el.style.fontSize) === 180,
-    );
+    const spans = [
+      ...root.querySelectorAll<HTMLSpanElement>('[data-pg-clamp-title]'),
+    ];
 
     if (spans[0]) {
       Object.assign(spans[0].style, {
