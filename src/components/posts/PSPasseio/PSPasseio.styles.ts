@@ -6,7 +6,7 @@ export const StyledCoverRoot = styled.div`
   background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
-  padding: 171px 40px 49px 40px;
+  padding: 171px 80px 49px 80px;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;

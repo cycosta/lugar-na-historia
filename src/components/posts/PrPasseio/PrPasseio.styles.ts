@@ -12,7 +12,7 @@ export const StyledCoverRoot = styled.div`
   display: flex;
   flex-direction: column;
   gap: 129px;
-  padding: 176px 40px 159px 40px;
+  padding: 176px 80px 159px 80px;
   align-items: flex-start;
   flex-wrap: nowrap;
   box-sizing: border-box;

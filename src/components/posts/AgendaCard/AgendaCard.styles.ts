@@ -12,9 +12,9 @@ export const StyledRoot = styled.div<{ $bg?: string }>`
 
 export const StyledCircleShape = styled.div`
   position: absolute;
-  left: 40px;
+  left: 80px;
   top: -500px;
-  width: 1000px;
+  width: 920px;
   height: 999px;
   border-radius: 519.5px;
   background: rgb(44, 225, 122);
@@ -22,17 +22,17 @@ export const StyledCircleShape = styled.div`
 
 export const StyledSpikeShape = styled.svg`
   position: absolute;
-  left: 40px;
+  left: 80px;
   top: -480px;
-  width: 1000px;
+  width: 920px;
   height: 1000px;
 `;
 
 export const StyledPhotoPanel = styled.div`
   position: absolute;
-  left: 40px;
+  left: 80px;
   top: 120px;
-  width: 1000px;
+  width: 920px;
   height: 1079px;
   border-radius: 100px;
   background: rgb(0, 0, 0);
@@ -46,8 +46,8 @@ export const StyledPhotoPanel = styled.div`
 
 export const StyledContent = styled.div`
   position: absolute;
-  left: 40px;
-  right: 40px;
+  left: 80px;
+  right: 80px;
   bottom: 189px;
   display: flex;
   flex-direction: column;
