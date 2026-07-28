@@ -61,7 +61,8 @@ export const StyledTitleBlock = styled.div`
 
 export const StyledTitleBlockOverlay = styled(StyledTitleBlock)`
   position: absolute;
-  left: 40px;
+  left: 80px;
+  right: 80px;
   top: 1156px;
   box-shadow: inset 0 0 0 1px rgb(0, 0, 0);
 `;
