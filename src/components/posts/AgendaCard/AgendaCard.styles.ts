@@ -63,7 +63,7 @@ export const StyledItemsList = styled.div`
 export const StyledItemRow = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 64px;
+  gap: 8px;
   align-items: flex-start;
 `;
 
