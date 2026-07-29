@@ -16,7 +16,7 @@ export const StyledRoot = styled.div<{ $bg?: string }>`
 
 export const StyledCircleShape = styled.div`
   position: absolute;
-  left: 80px;
+  left: ${spacing.space20};
   top: -500px;
   width: 920px;
   height: 999px;
@@ -26,7 +26,7 @@ export const StyledCircleShape = styled.div`
 
 export const StyledSpikeShape = styled.svg`
   position: absolute;
-  left: 80px;
+  left: ${spacing.space20};
   top: -480px;
   width: 920px;
   height: 1000px;
@@ -34,7 +34,7 @@ export const StyledSpikeShape = styled.svg`
 
 export const StyledPhotoPanel = styled.div`
   position: absolute;
-  left: 80px;
+  left: ${spacing.space20};
   top: 120px;
   width: 920px;
   height: 1079px;
@@ -50,8 +50,8 @@ export const StyledPhotoPanel = styled.div`
 
 export const StyledContent = styled.div`
   position: absolute;
-  left: 80px;
-  right: 80px;
+  left: ${spacing.space20};
+  right: ${spacing.space20};
   bottom: 189px;
   display: flex;
   flex-direction: column;
@@ -67,7 +67,7 @@ export const StyledItemsList = styled.div`
 export const StyledItemRow = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: ${spacing.space2};
   align-items: flex-start;
 `;
 

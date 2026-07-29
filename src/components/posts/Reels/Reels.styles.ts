@@ -63,8 +63,8 @@ export const StyledTitleBlock = styled.div`
 
 export const StyledTitleBlockOverlay = styled(StyledTitleBlock)`
   position: absolute;
-  left: 80px;
-  right: 80px;
+  left: ${spacing.space20};
+  right: ${spacing.space20};
   top: 1156px;
   box-shadow: inset 0 0 0 1px ${colors.neutral.black};
 `;
