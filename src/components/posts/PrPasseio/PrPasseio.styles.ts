@@ -1,14 +1,11 @@
 import styled from 'styled-components';
 
-const fontBody =
-  "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif";
-const fontDisplay =
-  "Druk, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif";
+import { colors, fontFamily, spacing, post } from '../../../tokens';
 
 export const StyledCoverRoot = styled.div`
-  width: 1080px;
-  height: 1350px;
-  background-color: rgb(245, 245, 245);
+  width: ${post.width}px;
+  height: ${post.height}px;
+  background-color: ${colors.neutral.offWhite};
   display: flex;
   flex-direction: column;
   gap: 129px;
@@ -20,12 +17,12 @@ export const StyledCoverRoot = styled.div`
 `;
 
 export const StyledDescriptionRoot = styled.div`
-  width: 1080px;
-  background-color: rgb(0, 0, 0);
+  width: ${post.width}px;
+  background-color: ${colors.neutral.black};
   display: flex;
   flex-direction: column;
   gap: 250px;
-  padding: 49px 40px 49px 40px;
+  padding: ${post.padding};
   align-items: flex-start;
   flex-wrap: nowrap;
   box-sizing: border-box;
@@ -33,7 +30,7 @@ export const StyledDescriptionRoot = styled.div`
 `;
 
 export const StyledItineraryRoot = styled(StyledDescriptionRoot)`
-  color: rgb(255, 255, 255);
+  color: ${colors.neutral.white};
 `;
 
 export const StyledPricesRoot = styled(StyledDescriptionRoot)``;
@@ -65,7 +62,7 @@ export const StyledCoverTextBlock = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: ${spacing.space8};
   align-items: flex-start;
   flex-wrap: nowrap;
   flex-shrink: 0;
@@ -83,13 +80,13 @@ export const StyledEyebrowWrap = styled.div`
 
 export const StyledEyebrow = styled.span`
   position: relative;
-  font-family: ${fontBody};
+  font-family: ${fontFamily.body};
   font-weight: 400;
   font-size: 28px;
   white-space: nowrap;
   line-height: 100%;
   text-box: trim-both cap alphabetic;
-  color: rgb(0, 0, 0);
+  color: ${colors.neutral.black};
   flex-shrink: 0;
 `;
 
@@ -97,7 +94,7 @@ export const StyledTitleBlock = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: ${spacing.space5};
   align-items: flex-start;
   flex-wrap: nowrap;
   flex-shrink: 0;
@@ -115,7 +112,7 @@ export const StyledTitleLineWrap = styled.div`
 
 export const StyledTitleLine = styled.span<{ $dark?: boolean }>`
   position: relative;
-  font-family: ${fontDisplay};
+  font-family: ${fontFamily.display};
   font-weight: 700;
   font-size: 180px;
   width: 1000px;
@@ -123,7 +120,7 @@ export const StyledTitleLine = styled.span<{ $dark?: boolean }>`
   overflow-wrap: break-word;
   line-height: 160px;
   text-box: trim-both cap alphabetic;
-  color: ${({ $dark }) => ($dark ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)')};
+  color: ${({ $dark }) => ($dark ? colors.neutral.black : colors.neutral.white)};
   text-transform: uppercase;
   flex-shrink: 0;
 `;
@@ -143,12 +140,12 @@ export const StyledDescriptionTextWrap = styled.div`
 export const StyledDescriptionText = styled.span`
   position: relative;
   width: 820px;
-  font-family: ${fontBody};
+  font-family: ${fontFamily.body};
   font-weight: 500;
   font-size: 70px;
   line-height: 1.2;
   text-box: trim-both cap alphabetic;
-  color: rgb(245, 245, 245);
+  color: ${colors.neutral.offWhite};
   flex-shrink: 0;
 `;
 
@@ -188,7 +185,7 @@ export const StyledStopRow = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: ${spacing.space10};
   align-items: center;
   flex-wrap: nowrap;
   flex-shrink: 0;
@@ -199,19 +196,19 @@ export const StyledStopDot = styled.div`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: ${colors.neutral.white};
   flex-shrink: 0;
 `;
 
 export const StyledStopText = styled.span<{ $wide?: boolean }>`
   position: relative;
   ${({ $wide }) => $wide && 'width: 940px;'}
-  font-family: ${fontBody};
+  font-family: ${fontFamily.body};
   font-weight: 400;
   font-size: 40px;
   line-height: 100%;
   text-box: trim-both cap alphabetic;
-  color: rgb(255, 255, 255);
+  color: ${colors.neutral.white};
   flex-shrink: 0;
   ${({ $wide }) => !$wide && 'white-space: nowrap;'}
 `;
@@ -222,7 +219,7 @@ export const StyledConnectorWrap = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10px;
-  padding: 0px 4px 0px 4px;
+  padding: 0 ${spacing.space1} 0 ${spacing.space1};
   align-items: flex-start;
   flex-wrap: nowrap;
   box-sizing: border-box;
@@ -241,7 +238,7 @@ export const StyledPricesTextWrap = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: ${spacing.space5};
   align-items: flex-start;
   flex-wrap: nowrap;
   flex-shrink: 0;
@@ -249,20 +246,20 @@ export const StyledPricesTextWrap = styled.div`
 
 export const StyledPricesLine = styled.span`
   position: relative;
-  font-family: ${fontDisplay};
+  font-family: ${fontFamily.display};
   font-weight: 700;
   font-size: 180px;
   white-space: nowrap;
   line-height: 100%;
   text-box: trim-both cap alphabetic;
-  color: rgb(245, 245, 245);
+  color: ${colors.neutral.offWhite};
   text-transform: uppercase;
   flex-shrink: 0;
 `;
 
 export const StyledEndingImage = styled.div`
   position: relative;
-  width: 1080px;
+  width: ${post.width}px;
   height: 672px;
   flex-shrink: 0;
 `;
@@ -273,7 +270,7 @@ export const StyledEndingBlockGreen = styled.div`
   top: 242px;
   width: 546px;
   height: 1059px;
-  background-color: rgb(44, 225, 122);
+  background-color: ${colors.accent.green};
 `;
 
 export const StyledEndingBlockRed = styled.div`
@@ -282,7 +279,7 @@ export const StyledEndingBlockRed = styled.div`
   top: -48px;
   width: 540px;
   height: 130px;
-  background-color: rgb(255, 13, 13);
+  background-color: ${colors.accent.red};
 `;
 
 export const StyledEndingBlockBlue = styled.div`
@@ -291,7 +288,7 @@ export const StyledEndingBlockBlue = styled.div`
   top: -48px;
   width: 540px;
   height: 610px;
-  background-color: rgb(53, 108, 252);
+  background-color: ${colors.accent.blue};
 `;
 
 export const StyledEndingBlockBlack = styled.div`
@@ -300,7 +297,7 @@ export const StyledEndingBlockBlack = styled.div`
   top: 562px;
   width: 540px;
   height: 739px;
-  background-color: rgb(0, 0, 0);
+  background-color: ${colors.neutral.black};
 `;
 
 export const StyledLogoWrap = styled.div`

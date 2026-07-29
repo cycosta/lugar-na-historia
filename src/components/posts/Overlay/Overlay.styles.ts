@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { fontFamily } from '../../../tokens';
+import { colors, fontFamily } from '../../../tokens';
 
 export const StyledDescription = styled.div<{ $w: number }>`
   position: absolute;
@@ -11,7 +11,7 @@ export const StyledDescription = styled.div<{ $w: number }>`
   font-weight: 500;
   font-size: 44px;
   line-height: 1.2;
-  color: #fff;
+  color: ${colors.neutral.white};
   pointer-events: none;
 `;
 

@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
+import { colors, fontFamily, spacing, post } from '../../../tokens';
+
 export const StyledCoverRoot = styled.div`
-  width: 1080px;
-  height: 1350px;
-  background-color: rgb(0, 0, 0);
+  width: ${post.width}px;
+  height: ${post.height}px;
+  background-color: ${colors.neutral.black};
   display: flex;
   flex-direction: column;
   padding: 171px 80px 49px 80px;
@@ -15,17 +17,17 @@ export const StyledCoverRoot = styled.div`
 `;
 
 export const StyledGalleryRoot = styled(StyledCoverRoot)`
-  padding: 49px 40px 49px 40px;
+  padding: ${post.padding};
 `;
 
 export const StyledEndingRoot = styled.div`
-  width: 1080px;
+  width: ${post.width}px;
   overflow: hidden;
-  background-color: rgb(0, 0, 0);
+  background-color: ${colors.neutral.black};
   display: flex;
   flex-direction: column;
   gap: 250px;
-  padding: 49px 40px 49px 40px;
+  padding: ${post.padding};
   align-items: flex-start;
   flex-wrap: nowrap;
   box-sizing: border-box;
@@ -89,28 +91,20 @@ export const StyledTitleWrap = styled.div`
   flex-wrap: nowrap;
   flex: 1 1 auto;
   min-width: 0;
-  padding-right: 32px;
+  padding-right: ${spacing.space8};
   box-sizing: border-box;
 `;
 
 export const StyledTitle = styled.span`
   position: relative;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: ${fontFamily.body};
   font-weight: 400;
   font-size: 28px;
   white-space: normal;
   overflow-wrap: break-word;
   line-height: 120%;
   text-box: trim-both cap alphabetic;
-  color: rgb(245, 245, 245);
+  color: ${colors.neutral.offWhite};
   flex-shrink: 0;
 `;
 
@@ -126,28 +120,20 @@ export const StyledDateWrap = styled.div`
 
 export const StyledDate = styled.span`
   position: relative;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: ${fontFamily.body};
   font-weight: 400;
   font-size: 28px;
   text-align: right;
   white-space: nowrap;
   line-height: 100%;
   text-box: trim-both cap alphabetic;
-  color: rgb(245, 245, 245);
+  color: ${colors.neutral.offWhite};
   flex-shrink: 0;
 `;
 
 export const StyledEndingImage = styled.div`
   position: relative;
-  width: 1080px;
+  width: ${post.width}px;
   height: 672px;
   flex-shrink: 0;
 `;
@@ -158,7 +144,7 @@ export const StyledEndingBlockGreen = styled.div`
   top: 242px;
   width: 543px;
   height: 1064px;
-  background-color: rgb(44, 225, 122);
+  background-color: ${colors.accent.green};
 `;
 
 export const StyledEndingBlockRed = styled.div`
@@ -167,7 +153,7 @@ export const StyledEndingBlockRed = styled.div`
   top: -49px;
   width: 543px;
   height: 131px;
-  background-color: rgb(255, 13, 13);
+  background-color: ${colors.accent.red};
 `;
 
 export const StyledEndingBlockBlue = styled.div`
@@ -176,7 +162,7 @@ export const StyledEndingBlockBlue = styled.div`
   top: -49px;
   width: 540px;
   height: 611px;
-  background-color: rgb(53, 108, 252);
+  background-color: ${colors.accent.blue};
 `;
 
 export const StyledEndingBlockBlack = styled.div`
@@ -185,7 +171,7 @@ export const StyledEndingBlockBlack = styled.div`
   top: 562px;
   width: 540px;
   height: 744px;
-  background-color: rgb(0, 0, 0);
+  background-color: ${colors.neutral.black};
 `;
 
 export const StyledLogoWrap = styled.div`

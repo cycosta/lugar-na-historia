@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
+import { colors, fontFamily, spacing, post } from '../../../tokens';
+
 export const StyledCoverRoot = styled.div`
-  width: 1080px;
-  height: 1350px;
-  background-color: rgb(53, 108, 252);
+  width: ${post.width}px;
+  height: ${post.height}px;
+  background-color: ${colors.accent.blue};
   display: flex;
   flex-direction: column;
   padding: 172px 80px 187px 80px;
@@ -15,13 +17,13 @@ export const StyledCoverRoot = styled.div`
 `;
 
 export const StyledShapeRoot = styled.div`
-  width: 1080px;
-  height: 1350px;
+  width: ${post.width}px;
+  height: ${post.height}px;
   overflow: hidden;
-  background-color: rgb(53, 108, 252);
+  background-color: ${colors.accent.blue};
   display: flex;
   flex-direction: column;
-  padding: 49px 40px 49px 40px;
+  padding: ${post.padding};
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
@@ -58,20 +60,12 @@ export const StyledDescriptionWrap = styled.div`
 export const StyledDescription = styled.span`
   position: relative;
   width: 820px;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: ${fontFamily.body};
   font-weight: 500;
   font-size: 70px;
   line-height: 1.2;
   text-box: trim-both cap alphabetic;
-  color: rgb(255, 255, 255);
+  color: ${colors.neutral.white};
   flex-shrink: 0;
 `;
 
@@ -99,7 +93,7 @@ export const StyledTitleBlock = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: ${spacing.space5};
   align-items: flex-start;
   flex-wrap: nowrap;
   flex-shrink: 0;
@@ -117,15 +111,7 @@ export const StyledTitleLineWrap = styled.div`
 
 export const StyledTitleLine = styled.span`
   position: relative;
-  font-family:
-    Druk,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: ${fontFamily.display};
   font-weight: 700;
   font-size: 180px;
   width: 1000px;
@@ -133,7 +119,7 @@ export const StyledTitleLine = styled.span`
   overflow-wrap: break-word;
   line-height: 160px;
   text-box: trim-both cap alphabetic;
-  color: rgb(255, 255, 255);
+  color: ${colors.neutral.white};
   text-transform: uppercase;
   flex-shrink: 0;
 `;
@@ -154,7 +140,7 @@ export const StyledCircle = styled.div`
   position: relative;
   height: 999px;
   border-radius: 519.5px;
-  background-color: rgb(255, 13, 13);
+  background-color: ${colors.accent.red};
   flex-shrink: 0;
   align-self: stretch;
 `;

@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
+import { colors, fontFamily, spacing, post } from '../../../tokens';
+
 export const StyledRootBox = styled.div`
-  width: 1080px;
-  height: 1920px;
-  background-color: rgb(0, 0, 0);
+  width: ${post.width}px;
+  height: ${post.reelsHeight}px;
+  background-color: ${colors.neutral.black};
   display: flex;
   flex-direction: column;
   padding: 451px 40px 49px 40px;
@@ -15,10 +17,10 @@ export const StyledRootBox = styled.div`
 `;
 
 export const StyledRootFull = styled.div`
-  width: 1080px;
-  height: 1920px;
+  width: ${post.width}px;
+  height: ${post.reelsHeight}px;
   overflow: hidden;
-  background-color: rgb(0, 0, 0);
+  background-color: ${colors.neutral.black};
   position: relative;
 `;
 
@@ -46,14 +48,14 @@ export const StyledPhotoSlotFull = styled.div`
   left: -100px;
   top: 0;
   width: 1280px;
-  height: 1920px;
+  height: ${post.reelsHeight}px;
 `;
 
 export const StyledTitleBlock = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: ${spacing.space5};
   align-items: flex-start;
   flex-wrap: nowrap;
   flex-shrink: 0;
@@ -64,7 +66,7 @@ export const StyledTitleBlockOverlay = styled(StyledTitleBlock)`
   left: 80px;
   right: 80px;
   top: 1156px;
-  box-shadow: inset 0 0 0 1px rgb(0, 0, 0);
+  box-shadow: inset 0 0 0 1px ${colors.neutral.black};
 `;
 
 export const StyledTitleLineWrap = styled.div`
@@ -79,15 +81,7 @@ export const StyledTitleLineWrap = styled.div`
 
 export const StyledTitleLine = styled.span`
   position: relative;
-  font-family:
-    Druk,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: ${fontFamily.display};
   font-weight: 700;
   font-size: 180px;
   width: 1000px;
@@ -95,7 +89,7 @@ export const StyledTitleLine = styled.span`
   overflow-wrap: break-word;
   line-height: 160px;
   text-box: trim-both cap alphabetic;
-  color: rgb(255, 255, 255);
+  color: ${colors.neutral.white};
   text-transform: uppercase;
   flex-shrink: 0;
 `;

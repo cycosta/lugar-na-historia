@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
+import { colors } from '../../../tokens';
+
 export const StyledWrapper = styled.div<{ $light: 'on' | 'off' }>`
   position: relative;
   width: 346px;
   height: 126.443px;
-  color: ${({ $light }) => ($light === 'on' ? 'rgb(255,255,255)' : 'rgb(0,0,0)')};
+  color: ${({ $light }) => ($light === 'on' ? colors.neutral.white : colors.neutral.black)};
 `;
 
 export const StyledWordmark = styled.svg`

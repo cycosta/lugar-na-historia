@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 
+import { colors, fontFamily, spacing, post } from '../../../tokens';
+
 export const StyledRoot = styled.div<{ $bg?: string }>`
   position: relative;
-  width: 1080px;
-  height: 1350px;
+  width: ${post.width}px;
+  height: ${post.height}px;
   overflow: hidden;
   box-sizing: border-box;
   ${({ $bg }) =>
-    $bg ? `background: url(${$bg}) center/cover;` : 'background: rgb(0,0,0);'}
+    $bg
+      ? `background: url(${$bg}) center/cover;`
+      : `background: ${colors.neutral.black};`}
 `;
 
 export const StyledCircleShape = styled.div`
@@ -17,7 +21,7 @@ export const StyledCircleShape = styled.div`
   width: 920px;
   height: 999px;
   border-radius: 519.5px;
-  background: rgb(44, 225, 122);
+  background: ${colors.accent.green};
 `;
 
 export const StyledSpikeShape = styled.svg`
@@ -35,7 +39,7 @@ export const StyledPhotoPanel = styled.div`
   width: 920px;
   height: 1079px;
   border-radius: 100px;
-  background: rgb(0, 0, 0);
+  background: ${colors.neutral.black};
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -57,7 +61,7 @@ export const StyledContent = styled.div`
 export const StyledItemsList = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: ${spacing.space6};
 `;
 
 export const StyledItemRow = styled.div`
@@ -70,30 +74,30 @@ export const StyledItemRow = styled.div`
 export const StyledItemDate = styled.span`
   width: 174px;
   flex-shrink: 0;
-  font-family: Inter, sans-serif;
+  font-family: ${fontFamily.body};
   font-weight: 400;
   font-size: 50px;
   line-height: 100%;
-  color: rgb(245, 245, 245);
+  color: ${colors.neutral.offWhite};
 `;
 
 export const StyledItemTitle = styled.span`
   flex: 1;
-  font-family: Inter, sans-serif;
+  font-family: ${fontFamily.body};
   font-weight: 400;
   font-size: 50px;
   line-height: 100%;
-  color: rgb(245, 245, 245);
+  color: ${colors.neutral.offWhite};
   white-space: normal;
   word-break: break-word;
 `;
 
 export const StyledMonth = styled.div<{ $extraMarginTop?: boolean }>`
-  font-family: Druk, sans-serif;
+  font-family: ${fontFamily.display};
   font-weight: 700;
   font-size: 180px;
   line-height: 1;
   text-transform: uppercase;
-  color: #fff;
-  ${({ $extraMarginTop }) => $extraMarginTop && 'margin-top: 24px;'}
+  color: ${colors.neutral.white};
+  ${({ $extraMarginTop }) => $extraMarginTop && `margin-top: ${spacing.space6};`}
 `;
